@@ -53,7 +53,7 @@ exports.updateOneTodo = (req, res) =>{
 
 
 
-exports.deletTodo = (req, res) =>{
+exports.deleteTodo = (req, res) =>{
     AppTodo.findByIdAndRemove(req.params.id)
         .then((todo) =>{
             console.log({todo})
