@@ -4,7 +4,7 @@ const express = require('express')
 const router = express.Router();
 
 
-const {createOneTodo, listAllTodo, updateOneTodo, deletTodo} = require('../controllers/todoControler.js')
+const {createOneTodo, listAllTodo, updateOneTodo, deleteTodo} = require('../controllers/todoControler.js')
 
 
 
@@ -15,7 +15,7 @@ router.get('/:userId', listAllTodo)
 
 router.put('/:id', updateOneTodo)
 
-router.delete('/:id', deletTodo)
+router.delete('/:id', deleteTodo)
 
 
 module.exports = router;
